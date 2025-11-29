@@ -1,0 +1,15 @@
+diff --git a/package.json b/package.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..41f1254cfd8d586e6e3078880ffe828b82d35912
+--- /dev/null
++++ b/package.json
+@@ -0,0 +1,9 @@
++{
++  "name": "chat-stack",
++  "version": "1.0.0",
++  "private": true,
++  "scripts": {
++    "dev": "node server.js",
++    "test": "node test/run-tests.js"
++  }
++}
