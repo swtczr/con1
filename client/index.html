@@ -1,0 +1,39 @@
+diff --git a/client/index.html b/client/index.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..50020b2c2d5124d02b3ea3c49775472250d0611b
+--- /dev/null
++++ b/client/index.html
+@@ -0,0 +1,33 @@
++<!doctype html>
++<html lang="en">
++<head>
++  <meta charset="UTF-8" />
++  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
++  <title>Chat Layout</title>
++  <link rel="stylesheet" href="./styles.css" />
++</head>
++<body>
++  <div id="app" class="chat-shell">
++    <header class="app-header">
++      <h1>Assistant Chat</h1>
++      <div id="status" class="status">Idle</div>
++    </header>
++    <div id="doc-header" class="doc-header" aria-live="polite"></div>
++    <main id="messages" class="message-list" aria-live="polite"></main>
++    <div id="typing" class="typing hidden">Assistant is typing…</div>
++    <footer class="input-row">
++      <form id="chat-form" class="chat-form">
++        <input id="chat-input" name="message" autocomplete="off" placeholder="Type a message" />
++        <button type="submit">Send</button>
++      </form>
++      <div class="actions">
++        <button id="retry">Retry</button>
++        <button id="refresh">Refresh</button>
++      </div>
++    </footer>
++    <div id="error" class="error hidden" role="alert"></div>
++    <div id="fallback" class="fallback hidden"></div>
++  </div>
++  <script type="module" src="./app.js"></script>
++</body>
++</html>
